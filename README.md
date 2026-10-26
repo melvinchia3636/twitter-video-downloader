@@ -42,10 +42,6 @@ Dry run — no bookmarks removed. Re-run with --yes.
 ## 🔬 Technologies Used
 
 ![Python](https://img.shields.io/badge/-PYTHON-FF0000?style=for-the-badge&logo=python&logoColor=white&color=3776AB)
-![gallery-dl](https://img.shields.io/badge/-GALLERY--DL-FF0000?style=for-the-badge&logo=python&logoColor=white&color=4B8BBE)
-![aiohttp](https://img.shields.io/badge/-AIOHTTP-FF0000?style=for-the-badge&logo=aiohttp&logoColor=white&color=2C5BB4)
-![Rich](https://img.shields.io/badge/-RICH-FF0000?style=for-the-badge&logo=python&logoColor=white&color=FFD43B)
-![MIT License](https://img.shields.io/badge/-MIT-FF0000?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=3DA639)
 
 ## ⌨️ Setup
 
