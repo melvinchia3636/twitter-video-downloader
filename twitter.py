@@ -44,7 +44,11 @@ from rich.progress import (
     TransferSpeedColumn,
 )
 
-HERE = Path(__file__).resolve().parent
+HERE = (
+    Path(sys.executable).resolve().parent
+    if getattr(sys, "frozen", False)
+    else Path(__file__).resolve().parent
+)
 BOOKMARKS_URL = "https://x.com/i/bookmarks"
 VIDEO_TYPES = ("video", "animated_gif")
 
