@@ -92,6 +92,28 @@ export TWITTER_AUTH_TOKEN="your_auth_token_here"
 | `./twitter.py clear --yes` | Remove every bookmark after backing them up. |
 | `./twitter.py --help` | Show all commands and options. |
 
+### Standalone Executable
+
+Bundle the script into a single self-contained binary (no Python required on the target machine):
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --clean --noconfirm \
+  --name twitter-bookmark-downloader \
+  --collect-all gallery_dl \
+  --collect-all rich \
+  twitter.py
+```
+
+The binary is written to `dist/twitter-bookmark-downloader` and accepts the same commands and flags as `twitter.py`:
+
+```bash
+./dist/twitter-bookmark-downloader videos --download
+```
+
+> Builds are platform-specific: the current build targets macOS on Apple Silicon (arm64). Rebuild on each OS/architecture you need to support.
+
+
 > macOS may ask for Keychain/full-disk access the first time the script reads browser cookies. Grant it, or use `--token` / `cookies.txt` instead.
 
 ## 📈 Status

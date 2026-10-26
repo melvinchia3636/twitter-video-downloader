@@ -26,3 +26,8 @@ downloads/
 # OS / editor
 .DS_Store
 .vscode/
+
+# Build artifacts
+build/
+dist/
+*.spec
