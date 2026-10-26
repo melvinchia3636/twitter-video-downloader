@@ -85,28 +85,16 @@ export TWITTER_AUTH_TOKEN="your_auth_token_here"
 
 ### Usage
 
-```bash
-# List every bookmarked video; write bookmark_videos.txt + bookmark_video_urls.txt
-./twitter.py videos
-
-# List and download everything to downloads/
-./twitter.py videos --download
-
-# Only the first 10 videos, into a custom folder
-./twitter.py videos --download --limit 10 --dir clips
-
-# Download videos from specific tweets
-./twitter.py download https://x.com/user/status/1234567890
-
-# Download from a file of tweet URLs (one per line)
-./twitter.py download -f links.txt
-
-# Preview clearing bookmarks (writes a backup first)
-./twitter.py clear
-
-# Actually remove every bookmark
-./twitter.py clear --yes
-```
+| Command | What it does |
+| --- | --- |
+| `./twitter.py videos` | List every bookmarked video and write `bookmark_videos.txt` + `bookmark_video_urls.txt`. |
+| `./twitter.py videos --download` | List every bookmarked video and download them to `downloads/`. |
+| `./twitter.py videos --download --limit 10 --dir clips` | Download only the first 10 videos into a custom folder. |
+| `./twitter.py download https://x.com/user/status/1234567890` | Download videos from specific tweet URL(s). |
+| `./twitter.py download -f links.txt` | Download from a file of tweet URLs, one per line. |
+| `./twitter.py clear` | Preview clearing bookmarks; writes a backup first. |
+| `./twitter.py clear --yes` | Remove every bookmark after backing them up. |
+| `./twitter.py --help` | Show all commands and options. |
 
 > macOS may ask for Keychain/full-disk access the first time the script reads browser cookies. Grant it, or use `--token` / `cookies.txt` instead.
 
