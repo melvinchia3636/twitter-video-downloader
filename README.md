@@ -100,7 +100,7 @@ export TWITTER_AUTH_TOKEN="your_auth_token_here"
 
 ## 📈 Status
 
-This project is actively maintained as a personal tool. If you find a bug or want a feature, please file an issue or open a pull request.
+This project is completed and no longer under active development. If you find a bug, feel free to file an issue or open a pull request.
 
 ## 💡 Inspirations
 
