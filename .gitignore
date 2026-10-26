@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Secrets & auth
+cookies.txt
+accounts.txt
+.env
+
+# Personal data
+bookmark_videos.txt
+bookmark_video_urls.txt
+bookmark_backup.txt
+downloads/
+
+# Media
+*.mp4
+*.mp3
+
+# OS / editor
+.DS_Store
+.vscode/
